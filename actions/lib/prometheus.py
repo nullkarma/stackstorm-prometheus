@@ -30,6 +30,7 @@ class PrometheusAPI(Action):
     def __init__(self, config):
         super(PrometheusAPI, self).__init__(config=config)
         self.api_ext = 'api/v1'
+        self.url = self.config.get('url')
 
     def _get(self, url, params):
         return RequestsMethod.method('get', url, params=params)
