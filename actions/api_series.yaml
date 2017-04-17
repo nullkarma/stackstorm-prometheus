@@ -1,0 +1,14 @@
+---
+
+name: api.series
+desciption: 'Query Prometheus Series API'
+
+runner_type: python-script
+entry_point: api_series.py
+
+parameters:
+  url:
+    type: string
+    description: 'Prometheus Url'
+  queries:
+    type: array
