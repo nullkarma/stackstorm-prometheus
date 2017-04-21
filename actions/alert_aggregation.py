@@ -4,7 +4,7 @@ from st2actions.runners.pythonrunner import Action
 from collections import defaultdict
 
 
-class AlertAggretation(object):
+class AlertAggretation(Action):
     def run(self, alerts, outer_label, inner_label):
         a = defaultdict(list)
         for alert in alerts:
