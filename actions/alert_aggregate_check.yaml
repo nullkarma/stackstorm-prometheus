@@ -1,0 +1,14 @@
+---
+
+name: alert.aggregate.check
+
+runner_type: python-script
+entry_point: alert_aggregate_check.py
+
+parameters:
+  alerts:
+    type: array
+  node_label:
+    type: string
+  check_label:
+    type: string
