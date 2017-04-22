@@ -20,7 +20,7 @@ class RequestsMethod(object):
 
         requests_method = methods.get(method)
         response = requests_method(url, auth=auth, headers=headers, params=params, json=json, verify=verify_ssl)
-        if response.status_code == 200:
+        if response.status_code:
             return response.json()
         else:
             return response.text
