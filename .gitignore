@@ -1,2 +1,4 @@
-*.idea
+.idea
+.gitlab-ci.yml
 test/
+ci/
