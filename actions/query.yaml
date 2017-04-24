@@ -1,10 +1,10 @@
 ---
 
-name: api.query
+name: query
 description: 'Instant Query Prometheus API'
 
 runner_type: python-script
-entry_point: api_query.py
+entry_point: query.py
 
 parameters:
   query:

@@ -5,9 +5,9 @@ from collections import defaultdict
 
 
 class AlertAggretation(Action):
-    def run(self, alerts, outer_label, inner_label):
+    def run(self, alerts, parent, child):
         a = defaultdict(list)
         for alert in alerts:
-            a[alert['labels'][outer_label]].append(alert['labels'][inner_label])
+            a[alert['labels'][parent]].append(alert['labels'][child])
 
         return a

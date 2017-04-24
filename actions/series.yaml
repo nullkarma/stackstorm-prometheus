@@ -1,10 +1,10 @@
 ---
 
-name: api.series
+name: series
 description: 'Query Prometheus Series API'
 
 runner_type: python-script
-entry_point: api_series.py
+entry_point: series.py
 
 parameters:
   queries:

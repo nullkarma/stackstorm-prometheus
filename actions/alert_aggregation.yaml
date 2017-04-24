@@ -8,9 +8,9 @@ entry_point: alert_aggregation.py
 parameters:
   alerts:
     type: array
-  outer_label:
+  parent:
     type: string
-    description: "Label group root"
-  inner_label:
+    description: "Label group parent / outer label"
+  child:
     type: string
     description: "Label group child"
